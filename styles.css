@@ -1,0 +1,83 @@
+/* General styling for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Soft light background for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff; /* White background */
+    padding: 40px; /* Increased padding for a more spacious layout */
+    border-radius: 10px; /* Slightly less rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    width: 100%;
+    max-width: 450px; /* Slightly wider max width */
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 28px; /* Increased font size for better visibility */
+    color: #2c3e50; /* Darker shade for professionalism */
+    margin-bottom: 25px; /* Increased margin for spacing */
+    font-weight: 600; /* Bold weight for emphasis */
+}
+
+/* Label styling */
+label {
+    font-size: 16px; /* Slightly larger font for readability */
+    color: #34495e; /* More neutral color */
+    margin-bottom: 10px; /* Space between label and select */
+}
+
+/* Select styling */
+select {
+    width: 100%;
+    padding: 12px; /* Increased padding for comfort */
+    font-size: 16px; /* Larger font size for ease of reading */
+    border: 1px solid #bdc3c7; /* Neutral border */
+    border-radius: 5px;
+    margin-bottom: 20px; /* Increased space for better layout */
+    background-color: #ecf0f1; /* Subtle background color for the dropdown */
+}
+
+/* Button styling */
+button {
+    background-color: #2980b9; /* More vibrant button color */
+    color: white;
+    padding: 12px 25px; /* Increased padding for comfort */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500; /* Slightly bold font */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #1a5276; /* Darker shade on hover */
+    transform: translateY(-2px); /* More noticeable hover effect */
+}
+
+/* Result styling */
+#result {
+    margin-top: 25px; /* Increased margin for clarity */
+    font-size: 22px; /* Larger font size for results */
+    color: #333;
+    font-weight: 600; /* Bold text for emphasis */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 450px) {
+    .container {
+        width: 90%;
+        padding: 30px; /* Reduced padding for smaller screens */
+    }
+}

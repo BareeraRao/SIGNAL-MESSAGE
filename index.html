@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Color Message</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Signal Color Message</h1>
+        
+        <div>
+            <label for="color">Select Signal Color:</label>
+            <select id="color">
+                <option value="" disabled selected>Select a color</option>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+
+        <button onclick="showMessage()">Show Message</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script>
+        function showMessage() {
+            const color = document.getElementById('color').value;
+            let message;
+
+            switch (color) {
+                case "red":
+                    message = "🔴 Stop! You must not proceed.";
+                    break;
+                case "yellow":
+                    message = "🟡 Caution! Prepare to stop.";
+                    break;
+                case "green":
+                    message = "🟢 Go! You can proceed safely.";
+                    break;
+                default:
+                    message = "Please select a color!";
+            }
+
+            document.getElementById('result').innerText = message;
+            document.getElementById('result').style.color = color; // Change text color to match the signal
+        }
+    </script>
+
+</body>
+</html>
